@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Linking Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do List <img src="img/icon.png" alt="img"></h2>
+            <div class="row">
+                <input type="text" placeholder="Add your text" id="inputbox">
+                <button onclick="AddTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+
+        <button class="show-card-btn" onclick="showCard()">Developer contact</button>
+
+        <div class="overlay" id="overlay">
+            <span class="close-btn" onclick="closeCard()">&times;</span>
+            <div class="info-card">
+                
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="img/profile-pic__8_-removebg-preview.png" alt="Rishi Raj">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Rishi Raj</h3>
+                        
+                        <a href="https://rishiraj.tech" class="portfolio-link" target="_blank">Portfolio(click Me)</a>
+                        <h4 class="title">App/Web Developer</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/rishi.rai.98434" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        
+                        <li><a href="https://www.linkedin.com/in/rishi-raj-3944491a2/" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
