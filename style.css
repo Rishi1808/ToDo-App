@@ -72,7 +72,7 @@ input {
     font-size: 14px;
 }
 
-button {
+.container button {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -298,4 +298,56 @@ span:hover {
 }
 .info-card{
     padding-bottom: 0;;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 50px;
+    background: transparent;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+  /* margin-bottom: 5%; */
+}
+.logo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+.todo-app{
+    margin-top: 10%;
+}
+.navbar a{
+
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fefefe;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+   
 }
