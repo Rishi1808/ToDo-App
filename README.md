@@ -17,7 +17,7 @@ A simple and user-friendly Todo List application built using HTML, CSS, and Java
 
 1. **Clone the repository**:
     ```bash
-    git clone [https://github.com/your-username/todo-list.git](https://rishi1808.github.io/ToDo-App/)
+    https://rishi1808.github.io/ToDo-App/
     ```
 
 2. **Open the project folder**:
